@@ -1,27 +1,44 @@
-# Petize
+# Nome do Projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+## Descrição
 
-## Development server
+Este projeto é uma aplicação Angular que busca o perfil de desenvolvedores na API pública do GitHub e exibe os seus dados em uma página de perfil.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias Utilizadas
 
-## Code scaffolding
+- Angular v15
+- PrimeNG
+- ngx-toastr
+- Node.js v18.14
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação
 
-## Build
+Antes de começar, você precisa ter o Node.js v18.14 instalado na sua máquina.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone este repositório:
+2. Navegue até a pasta do projeto e instale as dependências:
 
-## Running unit tests
+## Execução
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
+A aplicação estará disponível em `http://localhost:4200`.
 
-## Running end-to-end tests
+## Construção
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para construir a aplicação para produção, execute o seguinte comando:
+Os arquivos de construção estarão disponíveis na pasta `dist/`.
 
-## Further help
+## Motivação das Escolhas Técnicas
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Angular**: Escolhi o Angular pela sua robustez e pelo suporte à programação reativa, que facilita o gerenciamento de estado da aplicação.
+- **PrimeNG**: Utilizei o PrimeNG por ser uma biblioteca de componentes rica e completa para Angular. No entanto, optei por não usar os componentes do PrimeNG em algumas partes do código para ter mais controle sobre o comportamento e o estilo desses elementos.
+- **ngx-toastr**: Escolhi o ngx-toastr para exibir mensagens de notificação na aplicação de forma elegante e consistente.
+
+## Estrutura do Projeto
+
+Esse projeto tem uma estrutura simples de apenas um modulo, pois se trata de uma aplicação de pequeno porte e facilita a leitura do projeto.
+
+
+## Licença
+
+Feito por Felipe Alves Paixão de Jesus
