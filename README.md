@@ -16,16 +16,23 @@ Este projeto é uma aplicação Angular que busca o perfil de desenvolvedores na
 Antes de começar, você precisa ter o Node.js v18.14 instalado na sua máquina.
 
 1. Clone este repositório:
-2. Navegue até a pasta do projeto e instale as dependências:
+git clone <link do repositório>
+
+3. Navegue até a pasta do projeto e instale as dependências:
+cd <nome do projeto> npm install
 
 ## Execução
 
 Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
+ ng serve
+
 A aplicação estará disponível em `http://localhost:4200`.
 
 ## Construção
 
 Para construir a aplicação para produção, execute o seguinte comando:
+ ng build --prod
+ 
 Os arquivos de construção estarão disponíveis na pasta `dist/`.
 
 ## Motivação das Escolhas Técnicas
