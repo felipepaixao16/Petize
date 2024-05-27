@@ -1,0 +1,179 @@
+
+.container {
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
+  background: #FCFCFC;
+
+}
+
+.back {
+  position: relative;
+  left: 10%;
+  padding: 15px 0px;
+}
+
+.back a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration-line: none;
+  color: #0069CA;
+  font-size: 20px;
+}
+
+.back img {
+  width: 32px;
+  height: 32px;
+}
+
+.container-profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.box-profile {
+  width: 280px !important;
+  height: 465px;
+  display: inline;
+}
+
+.infos-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 20px 16px;
+
+}
+
+.info-profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-profile-top img {
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+}
+
+.info-profile-top h1 {
+  font-size: 20px;
+  color: #171923;
+}
+
+.info-profile-top p {
+  font-size: 14px;
+  color: #A0AEC0;
+}
+
+.info-profile-top .name-user {
+  line-height: 16px;
+}
+
+.infos-profile .about-me {
+  width: 248px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.info-profile-bottom ul {
+  padding: 0;
+}
+
+.info-profile-bottom ul li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.info-profile-bottom p {
+  margin: 8px 0px;
+  font-size: 14px;
+  color: #4A5568;
+}
+
+.more-infos a {
+  text-decoration-line: none;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.more-infos a:link {
+  color: #4a5568;
+}
+
+.profile-contact {
+  margin-top: 40px;
+}
+
+.profile-contact button {
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  background: #8C19D2;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.container-repo {
+  width: 904px;
+  height: 70%;
+  background: #fff;
+  border-radius: 6px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container-repo::-webkit-scrollbar {
+  display: none;
+}
+
+.container-repo .repo {
+  width: 856px;
+  padding: 24px;
+}
+
+.container-repo .title-repo {
+  font-size: 20px;
+  color: #4a5568;
+  text-decoration-line: none;
+}
+
+.container-repo .title-repo:link {
+  color: #4a5568;;
+}
+
+
+.container-repo p {
+  font-size: 16px;
+}
+
+
+.repo-info-stars {
+  display: flex;
+}
+
+.repo-info-stars span {
+  margin-left: 11px;
+}
+
+
+.repo-info-stars li {
+  color: #4A5568;
+  margin-left: 25px;
+}

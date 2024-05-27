@@ -1,0 +1,103 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <div class="back">
+    <a [routerLink]="['/home']">
+      <img src="../../../assets/icons8-seta.png" alt="">
+      voltar
+    </a>
+  </div>
+
+  <div class="container-profile">
+
+    <div class="box-profile">
+      <div class="infos-profile">
+        <div class="info-profile-top">
+          <img [src]="user?.avatar_url" alt="">
+
+          <div class="name-user">
+            <h1>{{ user?.name }}</h1>
+            <p>{{ user?.login }}</p>
+          </div>
+        </div>
+
+        <div class="about-me">
+          <p>
+            {{ user?.bio }}
+          </p>
+        </div>
+
+        <div class="info-profile-bottom">
+
+          <div class="follows">
+            <ul>
+              <li>
+                <img src="../../../assets/icons/Group, User.svg" alt="">
+                <p>{{ user?.followers }} seguidores</p>
+              </li>
+
+              <li>
+                <img src="../../../assets/icons/heart.svg" alt="">
+                <p>{{ user?.following }} seguindo</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="more-infos">
+            <ul>
+              <li>
+                <img src="../../../assets/icons/building-office-work-square.svg" alt="">
+                <p>{{ user?.company }}</p>
+              </li>
+
+              <li>
+                <img src="../../../assets/icons/Pin, Location.svg" alt="">
+                <p>{{ user?.location }}</p>
+              </li>
+
+              <li>
+                <img src="../../../assets/icons/email.svg" alt="">
+                <p>{{ user?.email }}</p>
+              </li>
+
+              <li>
+                <img src="../../../assets/icons/link-angle-right.svg" alt="">
+                <a [href]="getSiteUrl(user?.blog)" target="_blank">{{ user?.blog }}</a>
+              </li>
+
+              <li>
+                <img src="../../../assets/icons/Twitter.svg" alt="">
+                <a [href]="getTwitterUrl(user?.twitter_username)" target="_blank">{{ user?.twitter_username }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-contact">
+        <button>Contato</button>
+      </div>
+    </div>
+
+    <div class="container-repo">
+      <div class="col flex align-items-center justify-content-center repo" *ngIf="userRepo">
+
+        <div *ngFor="let repo of userRepo">
+          <a class="title-repo" href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
+          <p>
+            {{ repo.description }}
+          </p>
+          <div class="repo-info-stars">
+            <img src="../../../assets/icons/Star.svg" alt="">
+            <span>{{ repo.stargazers_count }}</span>
+            <li>Atualizado há {{ getDaysSinceUpdated(repo.updated_at) }} dias</li>
+          </div>
+          <p-divider></p-divider>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
