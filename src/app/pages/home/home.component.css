@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  height: 100vh;
+}
+
+.logo img {
+  width: 488px;
+  height: 80px;
+}
+
+.p-input-icon-left i {
+  margin-right: 10px;
+}
+
+
+.box-search input {
+  width: 592px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-right: 10px;
+  padding-left: 40px;
+}
+
+.box-search button {
+  cursor: pointer;
+  background: #8C19D2;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 32px;
+}
