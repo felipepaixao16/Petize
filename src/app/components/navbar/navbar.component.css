@@ -1,0 +1,22 @@
+.navbar {
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 119px;
+}
+
+.navbar .logo {
+  margin-left: 112px;
+}
+
+.box-search input {
+  width: 590px;
+  height: 48px;
+  border-radius: 6px;
+  border: 2px solid #8C19D2;
+}
